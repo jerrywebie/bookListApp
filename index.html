@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Book List</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <header>
+                <h1>my book list</h1>
+                <form id="search-form">
+                    <input type="text" placeholder="search">                    
+                </form>
+            </header>
+            <div id="content">
+                <form id="add-form">
+                    <input type="text" id="txtIsbn" placeholder="isbn">
+                    <input type="text" id="txtTitle" placeholder="title">
+                    <input type="text" id="txtAuthor" placeholder="author">
+                    <input type="button" id="btn-add" value="Add">
+                    <input type="button" id="btn-update" value="Edit and Save">
+                </form>               
+                <ul id="book-list">
+                    <li>
+                        <span class="title">Javascript & Jquery</span>
+                        <span class="author">Jon Duckett</span>
+                        <span class="isbn">#978118531648</span>
+                        <span class="btn-edit">edit</span>
+                        <span class="btn-delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">responsive web design</span>
+                        <span class="author">Ethan Marcotte</span>
+                        <span class="isbn">#9780984442577</span>
+                        <span class="btn-edit">edit</span>
+                        <span class="btn-delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">css master</span>
+                        <span class="author">tiffany b.brown</span>
+                        <span class="isbn">#9780648331506</span>
+                        <span class="btn-edit">edit</span>
+                        <span class="btn-delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">Html & css</span>
+                        <span class="author">Jon Duckett</span>
+                        <span class="isbn">#9781118008188</span>
+                        <span class="btn-edit">edit</span>
+                        <span class="btn-delete">delete</span>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <p>developed by jerry.&copy;2019.</p>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

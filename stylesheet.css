@@ -1,0 +1,213 @@
+/*
+=====================
+    body
+=====================
+*/
+
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+/*
+=====================
+    layout
+=====================
+*/
+#wrapper{
+    width:100%;    
+    margin:0 auto;
+}
+#container{
+    width:70%;
+    margin:auto 15%;
+    border:1px solid #dddddd;
+    border-radius: 2px;   
+}
+header,div#content,footer{
+    width:100%;
+}
+
+/*
+=====================
+    header
+=====================
+*/
+header{
+    background-color:#3CB371;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+header h1, footer p{ 
+    color:#f1f1ef;
+    text-align:center;  
+    text-transform: capitalize; 
+}
+/*
+=====================
+    content
+=====================
+*/
+
+/* add-form & search-form */
+#search-form ,#add-form {
+    box-sizing: border-box;
+    padding:20px;
+}
+/*#search-form{
+   border-top:1px solid #f1f1ef;
+}*/
+form input[type="text"]{
+    width:100%;
+    margin:10px 0px;
+    padding:10px 0 10px 5px; 
+    border:1px solid #dddddd; 
+    border-radius:3px;
+}
+form input::placeholder {
+    text-align: left;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+
+/*  ul   */
+#book-list{
+    box-sizing: border-box;
+    padding:20px;
+}
+ul#book-list li{
+    width:100%;
+   /* float: left;*/
+    margin:10px 2px;
+    list-style-type:none;
+    background-color:transparent;
+    border-left:3px outset transparent;  
+    border-radius: 2px; 
+    box-sizing: border-box;
+    padding:20px;
+    position: relative;
+}
+ul#book-list li:hover{
+    border-left:3px outset #3CB371;
+    background-color:#f1f1f1; 
+    border-radius: 2px;    
+}
+li span{   
+    display:block;  
+}
+span.title,
+span.author,
+span.isbn{
+    text-align:left;     
+    text-transform: capitalize;
+}
+span.title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #212F3C;
+}
+span.author{
+    font-size: 16px;
+    font-weight: 600;
+    color:#696969;
+}
+span.isbn{
+    font-size: 14px;
+    font-style: italic;
+    color:	#808080;
+   
+}
+/*buttons*/
+#add-form input[type="button"]{   
+    border:1px solid #3CB371;
+    background-color:#3CB371;
+    padding:5px 15px;
+    color:#f1f1ef;
+    border-radius: 3px;
+    position: relative;
+    top:8px;    
+    width: 100%; 
+    margin:10px 0px; 
+    display: block;
+    font-size: 16px;  
+    text-transform: capitalize; 
+}
+span.btn-delete{   
+    box-sizing: border-box;
+    border:1px solid #e05915;
+    background-color:#e05915;
+    padding:4px 8px;
+    color:#f1f1ef;
+    border-radius: 3px;
+    position: relative;
+    top:8px;
+    display: inline;
+    margin:auto 6px;
+    font-size: 16px;  
+    text-transform: capitalize; 
+}
+span.btn-edit{   
+    box-sizing: border-box;
+    border:1px solid #3CB371;
+    background-color:#3CB371;
+    padding:4px 8px;
+    color:#f1f1ef;
+    border-radius: 3px;
+    position: relative;
+    top:8px;
+    display: inline;  
+    margin:auto 6px; 
+    font-size: 16px;  
+    text-transform: capitalize;  
+}
+
+/*
+=====================
+    footer
+=====================
+*/
+footer{
+    clear: both;
+}
+footer p{
+    background-color:transparent;
+    box-sizing: border-box;
+    padding:10px;
+    border-top:1px solid #f1f1ef;
+    color:#3CB371;
+    font-size:13px;
+    font-weight: 600;
+}
+
+/*
+=====================
+    media queries
+=====================
+*/
+@media screen and (max-width:320px){
+    #container{
+        width:96%;
+        margin:auto 2%;        
+    }  
+    span.btn-delete,span.btn-edit{       
+        margin:auto 10px;
+    }    
+   
+}
+@media screen and (min-width:320px) and (max-width:500px){
+    #container{
+        width:96%;
+        margin:auto 2%;        
+    }  
+    span.btn-delete,span.btn-edit{       
+        margin:auto 10px;
+    }    
+   
+}
